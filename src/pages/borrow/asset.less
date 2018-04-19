@@ -1,0 +1,102 @@
+.device-container {
+    width: 276px;
+    min-height: 151px;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    padding-bottom: 10px;
+    background: #F3F4F5;
+    position: relative;
+    &.active {
+        span.dec, span.add {
+            cursor: pointer;
+            background-color: #fff;
+            .uxcore-icon {
+                background-color: #fff;
+            }
+        }
+    }
+    .device-header {
+        display: flex;
+        &.closeBtn {
+            s {
+                background: none !important;
+            }
+            .close-btn {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                cursor: pointer;
+            }
+        }
+        .m4-info {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 7px;
+            height: 30px;
+            .icon {
+                padding: 6px;
+                color: #F9BD0F;
+            }
+        }
+    }
+    .check-asset {
+        padding: 8px 0 0 11px;
+        span {
+            color: #000;
+        }
+        .kuma-checkbox-group-item {
+            margin-bottom: 8px;
+        }
+    }
+    .describe {
+        padding: 0 38px;
+        // height: 36px;
+        word-break: break-all;
+    }
+    .img-num {
+        padding-left: 38px;
+        margin-top: 9px;
+        display: flex;
+        .img-box {
+            span {
+                display: inline-block;
+                height: 56px;
+                border: 1px solid #C6CDD5;
+                margin-right: 5px;
+                img.small {
+                    width: 72px;
+                    height: 54px;
+                    cursor: zoom-in;
+                }
+            }
+        }
+        .select-num {
+            margin-left: 12px;
+        }   
+    }
+}
+.m4-info-content {
+    color: #000;
+    span {
+        margin-left: 5px;
+        color: #4A90E2;
+        cursor: pointer;
+    }
+}
+.asset-m4-info {
+    .kuma-popover-inner {
+        min-width: 252px !important;
+        padding: 10px !important;
+    }
+}
+.kuma-popover-placement-bottomRight {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    .kuma-popover-arrow {
+        top: -7px !important;
+    }
+}
+.kuma-popover-placement-bottomRight .kuma-popover-arrow {
+    left: 92% !important;
+}

@@ -1,0 +1,60 @@
+{
+  "name": "it-asset-pc",
+  "author": "paseo",
+  "version": "1.0.0",
+  "description": "An awesome project",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:platform/it-asset-pc.git"
+  },
+  "scripts": {
+    "start": "nowa server",
+    "build": "nowa build",
+    "cloud": "nowa build -d .package"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ali/kuma-nw": "^2.7.11",
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "immer": "^1.2.1",
+    "immutable": "^3.8.2",
+    "kuma-base": "^1.10.1",
+    "lxq-react-zoom": "^1.0.8",
+    "moment": "^2.20.1",
+    "natty-fetch": "~2.4.2",
+    "natty-storage": "~2.0.2",
+    "prop-types": "^15.6.1",
+    "refast": "~1.2.3",
+    "uploadcore": "^2.3.1",
+    "uxcore": "~0.15.18",
+    "uxcore-album": "^0.3.16",
+    "uxcore-animate": "^0.2.2",
+    "uxcore-button": "^0.4.16",
+    "uxcore-checkbox-group": "^1.2.3",
+    "uxcore-crumb": "^0.2.4",
+    "uxcore-dialog": "^0.7.7",
+    "uxcore-form": "^6.1.1",
+    "uxcore-icon": "^0.1.17",
+    "uxcore-menu": "^3.0.1",
+    "uxcore-message": "^0.5.3",
+    "uxcore-pagination": "^0.6.3",
+    "uxcore-popover": "^0.5.4",
+    "uxcore-progress": "^1.1.5",
+    "uxcore-radiogroup": "^1.2.4",
+    "uxcore-select2": "^0.4.22",
+    "uxcore-table": "^8.0.2",
+    "uxcore-tabs": "^0.6.12",
+    "uxcore-tooltip": "^0.4.8",
+    "uxcore-totop": "^0.5.0",
+    "uxcore-uploader": "^3.1.9"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.2",
+    "nowa": "^1",
+    "nowa-build": "^1",
+    "nowa-server": "^1.19.0",
+    "typescript": "^2.8.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "it-asset-pc",
+  "options": {
+    "type": "uxcore",
+    "template":
+      "https://github.com/nowa-webpack/template-uxcore/archive/v5.zip",
+    "npm": "https://registry.npm.taobao.org",
+    "vars": {
+      "__LOCAL__": true
+    },
+    "buildvars": {
+      "__LOCAL__": [false]
+    },
+    "pages": true,
+    "injects": [
+      
+    ],
+    "alias": {
+      "components": "components",
+      "db": "app/db.js",
+      "variables": "app/variables.js"
+    },
+    "mockapi": {
+      "/mock/user/query.json": "mock/user/query.js"
+    }
+  },
+  "assets": {
+    "type": "command",
+    "command": {
+      "cmd": ["tnpm ii", "tnpm run cloud"]
+    }
+  }
+}
+
+
+

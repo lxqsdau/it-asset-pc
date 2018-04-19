@@ -1,0 +1,23 @@
+.big-img-pos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3333;
+    background: rgba(0,0,0,0.6);;
+    transition: all 300ms;
+    opacity: 0;
+    .closeBig {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-family: uxcore !important;
+        color: #fff;
+        font-size: 21px;
+        cursor: pointer;
+        &::after {
+            content: "\e6b0";
+        }
+    }
+}

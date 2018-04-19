@@ -1,0 +1,240 @@
+body {
+    background: #f2f2f2 !important;
+}
+// 代理人下拉列表，去掉滚动条
+.kuma-select2-dropdown {
+    max-height: 4000px !important;
+}
+// 隐藏搜索下拉提示
+.kuma-uxform-main-search-dropdown {
+    display: none !important;
+}
+.kuma-uxtable-cell.last {
+    overflow: auto !important;
+}
+.kuma-uxtable-row-cells {
+    display: flex;
+}
+.kuma-uxtable-cell.last {
+    align-self: center;
+}
+
+// 表格 去掉滚动条
+.kuma-uxtable-body-scroll,
+.kuma-uxtable-header-scroll {
+    overflow-y: auto !important;
+}
+.kuma-uxtable-body .kuma-uxtable-cell {
+    height: auto !important;
+}
+.kuma-uxtable-cell>div {
+    height: auto !important;
+}
+
+
+// 单选按钮
+.kuma-radio-group-item {
+    display: flex !important;
+}
+.kuma-checkbox.radio-primary[type=radio]+s, .kuma-checkbox[type=radio]+s {
+    width: 18px !important;
+}
+
+
+// 表格提示
+.kuma-uxtable-column-message {
+    max-width: 2000px !important;
+    text-align: left;
+}
+
+// start
+.page-change1 {
+    .change-title {
+        padding: 24px 0;
+        font-size: 18px;
+        color: #000;
+        font-weight: 800;
+        text-align: center;
+    }
+    .tip {
+        height: 150px;
+        margin-bottom: 24px;
+        padding: 14px 0 0 36px;
+        background: rgba(249, 189, 15, 0.1);
+        position: relative;
+        .icon {
+            position: absolute;
+            color: #F9BD0F;
+            top: 8px;
+            left: 12px;
+        }
+        .important-tip {
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(31, 56, 88, .8);
+            line-height: 12px;
+        }
+        p {
+            color: rgba(31, 56, 88, 0.8);
+            font-size: 12px;
+            line-height: 22px;
+            &:last-child {
+                text-indent: 1.6em;
+            }
+        }
+    }
+    .replace-box {
+        margin-top: 25px;
+        .top {
+            display : flex;
+            .replace-tip {
+                position: relative;
+                left: -10px;
+                font-size: 12px;
+                color: rgba(31,56,88,0.8);
+                line-height: 16px;
+            }
+            .kuma-checkbox-group-item {
+                color: #000;
+                font-size: 14px;
+                .kuma-checkbox-group-item-content {
+                    padding-top: 2px;
+                }
+            }
+        }
+        .bottom {
+            width: 231px;
+            margin-left: 28px;
+            .kuma-label {
+                display: none;
+            }
+        }
+    }
+    .select-asset {
+        .font {
+            margin-bottom: 12px;
+            margin-top: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            color: rgba(0, 0, 0, .8);
+        }
+        .select-box {
+            display: flex;
+            .select-form-label {
+                line-height: 38px;
+                color: rgba(0, 0, 0, .6);
+                font-size: 12px;
+                margin-right: 12px;
+            }
+            .kuma-uxform.kuma-uxform-edit-mode {
+                width: 500px;
+            }
+        }
+    }
+    .table-wrapper {
+        position: relative;
+        .loading-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 22;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .changeBtn {
+            display: inline-block;
+            width: 80px;
+            height: 36px;
+            border: 1px solid rgba(31, 56, 88, .3);
+            border-radius: 3px;
+            background: #fff;
+            text-align: center;
+            line-height: 36px;
+            font-size: 14px;
+            color: #1F3858;
+            opacity: .6;
+        }
+        .workFlowName {
+            white-space: pre-wrap;
+            line-height: 20px;
+            display: inline-block;
+        }
+    }
+    .page-wrapper {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .kuma-uxtable-header-msg-icon {
+        color: #3c99d8;
+        margin-left: 5px;
+    }
+}
+
+// 资源描述
+.assetDescribe-wrapper {
+    display: flex !important;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    .img-content {
+        width: 72px;
+        height: 54px;
+        margin-right: 24px;
+        border: 1px solid rgba(31, 56, 88, .2);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .asset-info {
+        line-height: normal !important;
+        p {
+            margin-bottom: 8px;
+            color: rgba(0, 0, 0, .6);
+            span.asset-name, span.asset-user {
+                color: #3C99D8;
+            }
+        }
+    }
+}
+// 使用情况
+// 资源标签
+.assetLabel-wrapper, 
+.assetLabel-condation {
+    line-height: normal !important;
+    padding-top: 14px;
+    color: rgba(0, 0, 0, .6);
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+.kuma-dlg-header {
+    background: #fff !important;
+}
+
+.kuma-dlg-confirm {
+    top: 0 !important;
+    left: 0 !important;
+}
+.kuma-dlg-noheader {
+    .kuma-confirm-title {
+        display: none !important;
+    }
+    .kuma-confirm-body {
+        padding: 31px 16px 20px 24px !important;
+    }
+}
+
+// 更换方式
+.changeType .kuma-dlg-body .kuma-radio-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

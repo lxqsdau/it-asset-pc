@@ -1,0 +1,270 @@
+body {
+    background: #f2f2f2 !important;
+}
+// 所有的下拉列表加这个样式，最大高度重设
+.kuma-select2-dropdown-menu {
+    max-height: 10000000px !important;
+}
+// 代理人下拉列表，去掉滚动条
+.kuma-select2-dropdown-menu {
+    overflow-y: hidden !important;
+}
+// 下拉列表箭头
+.kuma-select2-open .kuma-select2-arrow b {
+    border-width: 4px 4px 0 !important;
+}
+// 覆盖tab的样式
+.kuma-tab-bottom .kuma-tab-nav-scroll, .kuma-tab-top .kuma-tab-nav-scroll{
+    width: auto !important;
+}
+//对话框样式
+.kuma-dlg-close-x {
+    color: #1F3858 !important;
+    opacity: 0.4;
+}
+.kuma-dlg-header {
+    height: 40px;
+    background-color: #fff !important;
+    .kuma-dlg-title {
+        margin: 0;
+        line-height: 40px;
+        font-size: 14px;
+        color: #000;
+    }
+    .icon {
+        color: #F9BD0F;
+        margin-right: 5px;
+    }
+}
+// 表格 去掉滚动条
+.kuma-uxtable-body-scroll,
+.kuma-uxtable-header-scroll {
+    overflow-y: auto !important;
+    // float: none !important;
+}
+.ecos-right {
+    padding: 0 !important;
+}
+// 页面样式
+.page-selfUse {
+    width: 947px;
+    padding: 0 20px 20px 20px;
+    .self-title {
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #5d5d5d;
+        text-align: center;
+    }
+    .replace-box {
+        margin-top: 25px;
+        .top {
+            display : flex;
+            .replace-tip {
+                position: relative;
+                left: -10px;
+                font-size: 12px;
+                color: rgba(31,56,88,0.80);
+                line-height: 16px;
+            }
+        }
+        .bottom {
+            width: 231px;
+            margin-left: 28px;
+            .kuma-label {
+                display: none;
+            }
+        }
+    }
+    .step-address {
+        margin-top: 40px;
+        .kuma-select2-selection__placeholder {
+            display: block !important;
+        }
+        .step-title {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .select-city {
+            width: 100px;
+            margin-left: 10px;
+        }
+        .select-park {
+            width: 145px;
+            margin-left: 10px;
+        }
+        .select-location {
+            width: 190px;
+            margin-left: 10px;
+        }
+    }
+    .step-device {
+        margin-top: 40px;
+        .config-info {
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            height: 36px;
+            margin-bottom: 10px;
+            background: #fffce7;
+            .icon {
+                color: #F9BD0F;
+            }
+            span {
+                padding-left: 10px;
+                color: #1F3858;
+                &.look-info {
+                    color: #4A90E2;
+                    cursor: pointer;
+                }
+            }
+        }
+        .step-title {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .tab-box {
+            padding-bottom: 10px;
+            border: 1px solid #C6CDD5;
+            min-height: 600px;
+            position: relative;
+            .tab-loader-box {
+                position: absolute;
+                top: 54px;
+                left: 0;
+                background: #f5f5f5;
+                width: 100%;
+                height: 540px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 22;
+                img {
+                    width: 80px;
+                }
+            }
+            .deviceList-box {
+                padding: 0 11px 0 26px;
+                .deviceList-title {
+                    margin-bottom: 5px;
+                    color: #000;
+                }
+                .deviceList-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    width: 866px;
+                }
+            }
+        }
+    }
+    .select-info-box {
+        .select-info {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            &-title {
+                width: 85px;
+                margin-top: 10px;
+                font-size: 13px;
+                color: rgba(0,0,0,0.60);
+            }
+        }
+    }
+    .reason-box {
+        margin-top: 20px;
+        .step-title {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .kuma-label {
+            display: none;
+        }
+        textarea {
+            height: 80px !important;
+        }
+    }
+    .add-file {
+        .preview-action, .download-action {
+            display: none;
+        }
+    }
+    .btn-box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: auto !important;
+        }
+        .pre {
+            margin-right: 14px;
+            background: #F5F5F5;
+            border: 1px solid #CCCCCC;
+            color: #636363;
+        }
+    }
+}
+
+
+.asset-detail {
+    .kuma-dlg-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .kuma-button-secondary {
+        display: none;
+    }
+}
+
+
+
+// 配置信息弹窗
+.config-info-popover {
+    .kuma-popover-inner {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+.m4-info-dialog {
+    ol {
+        padding-left: 14px;
+    }
+    ol li {
+        list-style-type: decimal !important;
+        font-size: 12px;
+        color: rgba(31,56,88,0.80);
+        line-height: 18px;
+    }
+}
+
+.kuma-dlg-wrap {
+    z-index: 1060 !important;
+}
+.error-info-box {
+    position: relative;
+    background: rgba(249,189,15,.1);
+    border-radius: 3px;
+    // height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 29px;
+    margin-top: 15px;
+    span {
+        opacity: 0.8;
+        font-size: 12px;
+        color: #1F3858;
+        .icon {
+            color: #F9BD0F;
+            margin-right: 13px;
+            position: absolute;
+            left: 9px;
+            top: 6px;
+        }
+    }
+}

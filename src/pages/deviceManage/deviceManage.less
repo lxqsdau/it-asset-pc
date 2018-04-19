@@ -1,0 +1,184 @@
+body {
+    background: #f2f2f2 !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.kuma-dlg {
+    left: auto !important;
+}
+// 代理人下拉列表， 要加这个，避免双滚动条
+.kuma-select2-dropdown {
+    overflow-y: unset !important;
+}
+// 图片上传+
+.kuma-upload-picker-visual .uxicon-zengjia1 {
+    position: absolute;
+    top: 26px;
+    left: 36px;
+    font-size: 28px;
+    color: #1F3858;
+    opacity: .4;
+}
+// 鼠标悬浮图片呢
+.field-status {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    // 隐藏放大
+    .kuma-upload-action.preview-action {
+        // display: none !important;
+        position: relative;
+        left: 17px;
+    }
+    // 删除按钮
+    .remove-action {
+        position: absolute;
+        top: -43px;
+        right: 0px;
+    }
+}
+.kuma-uxcore-album .album-overlay {
+    z-index: 9999 !important;
+}
+// 表格 去掉滚动条
+.kuma-uxtable-body-scroll,
+.kuma-uxtable-header-scroll {
+    overflow-y: auto !important;
+    // float: none !important;
+}
+
+// 表格操作按钮
+a.kuma-button-group-separated-item {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px 0 0;
+}
+
+// 表格操作按钮间隔线
+.kuma-button-group-separated-split-line {
+    color: rgba(31,56,88,.1);
+    display: inline-block;
+    margin-right: 12px;
+}
+// 表格暂无数据
+.kuma-uxtable-body-scroll {
+    float: none !important;
+}
+// 文本域去掉滚动条
+.device-dialog {
+    .kuma-textarea {
+        overflow-y: auto !important;
+    }
+}
+//对话框样式
+.kuma-dlg-close-x {
+    color: #fff !important;
+}
+.kuma-dlg-header {
+    height: 40px;
+    background-color: #f37327;
+    .kuma-dlg-title {
+      margin: 0;
+      line-height: 40px;
+      font-size: 14px;
+      color: #fff;
+    }
+}
+
+.page-deviceManage {
+    width: 1180px !important;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 0px;
+    background: #fff;
+    .page-inner {
+        min-height: 698px;
+        width: 100%;
+        .title {
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #5d5d5d;
+            text-align: center;
+        }
+        .select-area {
+            padding: 0 20px;
+            display: flex;
+            .select-from {
+                width: 300px;
+            }
+            .select-btn {
+                margin-top: 1px;
+                .uxicon-sousuo {
+                    margin-right: 0;
+                    font-size: 20px;
+                }
+            }
+            .space {
+                flex: 1;
+            }
+        }
+        .table-box {
+            padding: 0 20px 20px;
+            .kuma-uxtable-content {
+                min-height: 580px;
+            }
+        }
+    }
+}
+
+.imgUploader {
+    display: flex;
+    .imgLabel {
+        width: 88px;
+        padding-top: 9px;
+        padding-right: 16px;
+        vertical-align: top;
+        text-align: right;
+    }
+    .imgTip {
+        padding: 37px 0 0 0px;
+        width: 161px;
+        text-align: center;
+        p {
+            text-align: center;
+        }
+    }
+}
+.kuma-uploader {
+    min-width: auto !important;
+}
+// 表格数据过程，分行显示
+.kuma-uxtable-body .kuma-uxtable-cell {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    .default-cell {
+        line-height: 23px;
+        padding: 6px 0;
+    }
+}
+.kuma-uxtable-cell>div {
+    white-space: pre-wrap !important;
+    height: auto !important;
+}
+.kuma-uxtable-row .kuma-uxtable-row-cells {
+    display: flex;
+    align-content: center;
+}
+.table-house-item {
+    line-height: 35px;
+}
+
+
+
+.right-layout.table-cell.pl30.pr30 {
+    background: #fff;
+}
+
+

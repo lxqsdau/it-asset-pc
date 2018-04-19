@@ -1,0 +1,449 @@
+[ms-controller], [ms-if] {
+    display: block !important;
+}
+body {
+    background: #f2f2f2 !important;
+}
+// 代理人下拉列表，去掉滚动条
+.kuma-select2-dropdown {
+    max-height: 4000px !important;
+}
+// 下拉列表箭头
+.kuma-select2-open .kuma-select2-arrow b {
+    border-width: 4px 4px 0 !important;
+}
+
+// tab 条
+.kuma-tab-open>.kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
+    width: 112px !important;
+}
+
+//对话框样式
+.kuma-dlg-close-x {
+    color: #1F3858 !important;
+    opacity: 0.4;
+}
+.kuma-dlg-header {
+    height: 40px;
+    background-color: #fff !important;
+    .kuma-dlg-title {
+        margin: 0;
+        line-height: 40px;
+        font-size: 14px;
+        color: #000;
+    }
+    .icon {
+        color: #F9BD0F;
+        margin-right: 5px;
+    }
+}
+.kuma-dlg-wrap {
+    z-index: 1060 !important;
+}
+
+
+
+.page-borrow {
+    width: 920px;
+    margin: 0 auto;
+    .borrow-title {
+        padding: 24px 0 13px 0;
+        font-size: 18px;
+        color: #000;
+        font-weight: 800;
+        text-align: center;
+    }
+    .tab-wrapper {
+        overflow-x: hidden;
+        .tab-bar {
+            display: flex;
+            height: 49px;
+            border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+            position: relative;
+            .tab-bar-ink {
+                height: 49px;
+                padding: 0 24px;
+                line-height: 49px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-out, color 0.3s ease-out;
+                &.active {
+                    color: #f37327;
+                }
+            }
+            .tab-bottom {
+                position: absolute;
+                bottom: 0;
+                width: 104px;
+                height: 2px;
+                background-color: #f37327;
+                z-index: 1;
+                transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+            }
+        }
+        .tab-content {
+            display: flex;
+            .tab1 {
+                flex-shrink: 0;
+                width: 100%;
+            }
+            .tab2 {
+                flex-shrink: 0;
+                width: 100%;
+            }
+        }
+    }
+    .change-policy {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        // line-height: 36px;
+        margin-top: 12px;
+        padding-left: 16px;
+        background: rgba(60, 153, 216, .1);
+        border-radius: 3px;
+        .icon {
+            color: #3C99D8;
+        }
+        .policy {
+            padding-left: 12px;
+            font-size: 12px;
+            color: rgba(31, 56, 88, .8);
+        }
+        .info-tip {
+            padding-left: 10px;
+            color: #3C99D8;
+            cursor: pointer;
+        }
+    }
+    .replace-box {
+        margin-top: 25px;
+        .top {
+            display : flex;
+            .replace-tip {
+                position: relative;
+                left: -10px;
+                font-size: 12px;
+                color: rgba(31,56,88,0.8);
+                line-height: 16px;
+            }
+            .kuma-checkbox-group-item {
+                color: #000;
+                font-size: 14px;
+                .kuma-checkbox-group-item-content {
+                    padding-top: 2px;
+                }
+            }
+        }
+        .bottom {
+            width: 231px;
+            margin-left: 28px;
+            .kuma-label {
+                display: none;
+            }
+        }
+    }
+    .step-1 {
+        margin-top: 8px;
+        .kuma-select2-selection__placeholder {
+            display: block !important;
+        }
+        .step-title {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .select-city {
+            width: 100px;
+            margin-left: 10px;
+        }
+        .select-park {
+            width: 140px;
+            margin-left: 10px;
+        }
+        .select-location {
+            width: 190px;
+            margin-left: 10px;
+        }
+    }
+    .step-2 {
+        margin-top: 10px;
+        .step-title {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .tab-box {
+            border: 1px solid #C6CDD5;
+            min-height: 600px;
+            position: relative;
+            .tab-loader-box {
+                position: absolute;
+                top: 54px;
+                left: 0;
+                background: #f5f5f5;
+                width: 100%;
+                height: 540px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 22;
+                img {
+                    width: 80px;
+                }
+            }
+        }
+        .deviceList-box {
+            padding: 0 11px 0 26px;
+            .deviceList-title {
+                margin-bottom: 5px;
+                color: #000;
+            }
+            .deviceList-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 866px;
+            }
+        }
+    }
+    .select-info-box {
+        .select-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            &-title {
+                width: 85px;
+                margin-top: 10px;
+                font-size: 14px;
+                color: rgba(0,0,0,1);
+            }
+        }
+    }
+    .step-3 {
+        position: relative;
+        margin-top: 20px;
+        .max-date {
+            position: absolute;
+            font-size: 12px;
+            color: rgba(31, 56, 88, .8);
+            left: 520px;
+            top: 93px;
+        }
+        .step-title {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+        }
+        .kuma-select-uxform-field {
+            width: 240px !important;
+        }
+    }
+    .step-4 {
+        margin-top: 12px;
+        .step-title {
+            font-size: 14px;
+            color: rgba(0,0,0,1);
+            margin-bottom: 12px;
+        }
+        .kuma-label {
+            display: none;
+        }
+        textarea {
+            height: 124px !important;
+            width: 720px;
+        }
+        // 文不域
+        .kuma-uxform-field-core {
+            width: auto !important;
+        }
+    }
+    .add-file {
+        .preview-action, .download-action {
+            display: none;
+        }
+    }
+    .btn-box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        button {
+            width: auto !important;
+        }
+    }
+
+    .select-box {
+        margin-top: 24px;
+        display: flex;
+        .select-form-label {
+            line-height: 38px;
+            color: rgba(0, 0, 0, .6);
+            font-size: 12px;
+            margin-right: 12px;
+        }
+        .kuma-uxform.kuma-uxform-edit-mode {
+            width: 500px;
+        }
+    }
+    .table-box {
+        position: relative;
+        // height: 600px;
+        border: 1px solid rgba(31, 56, 88, .3);
+        // overflow: auto;
+        .xujieLoading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+        .kuma-uxtable-header-msg-icon {
+            color: #3C99D8;
+            margin-left: 5px;
+        }
+        .kuma-uxtable-row-cells {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .xujie-select-info {
+        .select-info-title {
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, .8);
+        }
+        .select-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .time-input {
+        margin-top: 14px;
+        position: relative;
+        .step-title {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, .8);
+        }
+        .length-form {
+            width: 200px;
+        }
+        .font {
+            position: absolute;
+            font-size: 12px;
+            color: rgba(31, 56, 88, .8);
+            left: 207px;
+            top: 40px;
+        }
+    }
+}
+
+
+// 更换政策提示
+.tip {
+    height: 154px;
+    width: 890px;
+    padding: 14px 71px 10px 36px !important;
+    background: rgba(249, 189, 15, 0.1);
+    position: relative;
+    .icon {
+        position: absolute;
+        color: #F9BD0F;
+        top: 8px;
+        left: 12px;
+    }
+    .important-tip {
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(31, 56, 88, .8);
+        line-height: 12px;
+    }
+    p {
+        color: rgba(31, 56, 88, 0.8);
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+.kuma-popover-inner {
+    padding: 0 !important;
+    border: none !important;
+    max-width: 10000px !important;
+}
+
+
+
+.kuma-uxform-main-search-dropdown {
+    display: none !important;
+}
+
+// 资源描述
+.assetDescribe-wrapper {
+    display: flex !important;
+    align-items: center;
+    padding-top: 13px;
+    // padding-bottom: 17px;
+    .img-content {
+        width: 72px;
+        height: 54px;
+        margin-right: 24px;
+        border: 1px solid rgba(31, 56, 88, .2);
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .asset-infomation {
+        line-height: normal !important;
+        p {
+            margin-bottom: 8px;
+            color: rgba(0, 0, 0, .6);
+            span.asset-name, span.asset-user {
+                color: #3C99D8;
+            }
+        }
+    }
+}
+// 使用情况
+// 资源标签
+.assetLabel-wrapper, 
+.assetLabel-condation {
+    line-height: normal !important;
+    padding-top: 13px;
+    color: rgba(0, 0, 0, .6);
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+// 表格 去掉滚动条
+.kuma-uxtable-body-scroll,
+.kuma-uxtable-header-scroll {
+    overflow-y: auto !important;
+}
+.kuma-uxtable-body .kuma-uxtable-cell {
+    height: 100px !important;
+    line-height: 100px !important;
+}
+.kuma-uxtable-cell>div {
+    height: auto !important;
+}
+
+
+// 表格提示
+.kuma-uxtable-column-message {
+    max-width: 2000px !important;
+    text-align: left;
+}

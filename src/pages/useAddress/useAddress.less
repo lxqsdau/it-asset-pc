@@ -1,0 +1,238 @@
+body {
+    background: #f2f2f2 !important;
+}
+
+// 表格 去掉滚动条
+.kuma-uxtable-body-scroll,
+.kuma-uxtable-header-scroll {
+    overflow-y: auto !important;
+    float: none !important;
+}
+// 表格操作按钮
+a.kuma-button-group-separated-item {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px 0 0;
+}
+// 表格操作按钮间隔线
+.kuma-button-group-separated-split-line {
+    color: rgba(31,56,88,.1);
+    display: inline-block;
+    margin-right: 12px;
+}
+// 下拉列表箭头
+.kuma-select2-open .kuma-select2-arrow b {
+    border-width: 4px 4px 0 !important;
+}
+// 下拉列表，多选，删除icon 
+.kuma-select2 .kuma-select2-selection__choice__remove {
+    font-family: uxcore !important;
+}
+// 所有的下拉列表加这个样式，最大高度重设
+.kuma-select2-dropdown-menu {
+    max-height: 10000000px !important;
+}
+.kuma-select2-selection--single .kuma-select2-selection__clear {
+    font-family: uxcore !important;
+}
+.useAddress-container {
+    width: 1180px!important;
+    margin: 0 auto 0px;
+    background: #fff;
+    .title {
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #5d5d5d;
+        text-align: center;
+    }
+
+    .select-box {
+        display: flex;
+        padding: 0 20px;
+        .select {
+            display: flex;
+            width: 520px;
+            .city-label {
+                flex: 0 0 38px;
+                line-height: 40px; 
+            }
+            .keyword-label {
+                flex: 0 0 50px;
+                line-height: 40px; 
+            }
+            .select2-city {
+                flex: 0 0 100px;
+                margin-right: 20px;
+            }
+            .select2-park {
+                flex: 0 0 120px;
+                margin-right: 20px;
+            }
+            .kuma-label {
+                display: none;
+            }
+        }
+        .select-btn {
+            margin-top: 1px;
+            .uxicon-sousuo {
+                margin-right: 0;
+                font-size: 20px;
+            }
+        }
+        .space {
+            flex: 1;
+        }
+    }
+
+    .table-box {
+        padding: 0 20px 20px;
+        .kuma-uxtable-content {
+            min-height: 580px;
+        }
+    }
+}
+
+// 领用地点新增，编辑弹窗头部样式覆盖，底部footer样式
+.add-address, 
+.edit-address {
+    .kuma-dlg-close-x {
+        color: #fff;
+    }
+    .kuma-dlg-header {
+        height: 40px;
+        background-color: #f37327;
+        .kuma-dlg-title {
+          margin: 0;
+          line-height: 40px;
+          font-size: 14px;
+          color: #fff;
+        }
+    }
+    .kuma-dlg-body {
+        padding: 25px 0px 15px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .kuma-dlg-footer {
+        text-align: center;
+        .kuma-button-sm {
+            padding: 0 27px;
+            font-size: 14px;
+        }
+    }
+}
+
+.add-address {
+    .new-city-box, .new-park-box, .new-location-box, .new-area-box, .new-house-box {
+        margin-bottom: 15px;
+        margin-left: 62px;
+        span.city-label {
+            display: inline-block;
+            width: 88px;
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+    .new-dis-box {
+        width: 293px;
+        margin-left: 62px;
+    }
+}
+.new-dis-box {
+    .kuma-label {
+        padding-right: 10px !important;
+    }
+}
+// 新增弹窗，城市切换
+.switch-city {
+    .switch-city-btn-box {
+        margin-left: 200px;
+    }
+}
+.city-btn,
+.house-btn {
+    margin-left: 87px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background:  #f0f0f0;
+    margin: 20px 0;
+}
+
+// 覆盖弹窗样式
+.kuma-dlg {
+    top: 0  !important;
+    left: 0 !important;
+}
+.kuma-dlg-wrap .kuma-dlg-confirm {
+    top: 0  !important;
+    left: 0 !important;
+}
+.kuma-button, .inputBtnSmall, #btn_asset_capture_signature {
+    width: auto !important;
+}
+// // 操作人下拉列表，去掉滚动条
+.kuma-select2-dropdown-menu {
+    overflow-y: auto !important;
+}
+.kuma-select2-dropdown {
+    overflow-y: auto !important;
+}
+// 编辑弹窗
+.edit-address {
+    .new-city-box, .new-park-box, .new-location-box, .new-area-box, .new-house-box {
+        margin-bottom: 15px;
+        margin-left: 62px;
+        span.city-label {
+            display: inline-block;
+            width: 88px;
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+    .new-dis-box {
+        width: 293px;
+        margin-left: 62px;
+    }
+}
+
+// 
+.kuma-uxtable-body .kuma-uxtable-cell {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+}
+.kuma-uxtable-cell>div {
+    white-space: pre-wrap !important;
+    height: auto !important;
+    // min-height: 50px;
+    // line-height: 23px !important;
+}
+.kuma-uxtable-row .kuma-uxtable-row-cells {
+    display: flex;
+    align-content: center;
+}
+.table-house-item {
+    line-height: 35px;
+}
+.kuma-page-item:hover a {
+    color: #f37327 !important;
+}
+.kuma-page-item-active a {
+    color: #fff !important;
+}
+
+.kuma-uxtable-body .default-cell {
+    line-height: 23px !important;
+}
+
+// 多选框，设置最大高度，避免下拉列表显示不全
+.kuma-select2-selection--multiple {
+    max-height: 300px;
+    overflow: auto;
+}

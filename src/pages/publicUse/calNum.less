@@ -1,0 +1,42 @@
+.num-box {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    span {
+        display: inline-block;
+        &.num {
+            // padding: 0 10px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+        &.dec, &.add {
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            border-radius: 3px;
+            cursor: not-allowed;
+            background-color: #e8e8e8;
+        }
+        &.dec{
+            border: 1px solid #C6CDD5;
+            .line {
+                width: 10px;
+                height: 1px;
+                background: #C6CDD5;
+                margin-bottom: 5px;
+            }
+        }
+        &.add {
+            border: 1px solid #C6CDD5;
+            line-height: 14px;
+            .uxcore-icon {
+                color: #C6CDD5;
+                font-size: 12px;
+                background-color: #e8e8e8;
+            }
+        }
+    }
+}
